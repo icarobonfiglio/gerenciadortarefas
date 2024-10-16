@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Cadastro
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="/manifest.json">
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js');
+    }
+</script>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <div class="form-container">
+            <h2>Cadastro</h2>
+            <div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="input-field" required>
+                </div>
+                <div class="form-group">
+                    <label for="contato">Contato:</label>
+                    <input type="text" id="contato" name="contato" class="input-field" required>
+                </div>
+                <div class="form-group">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" class="input-field" required>
+                </div>
+                <div class="form-group">
+                    <label for="sms">SMS:</label>
+                    <input type="text" id="sms" name="sms" class="input-field" required>
+                </div>
+                <div class="form-group">
+                    <label for="ifriend">iFriend:</label>
+                    <input type="text" id="ifriend" name="ifriend" class="input-field" required>
+                </div>
+                <button type="button" class="btn-submit">Enviar</button>
+            </div>
+        </div>
+        <ul id="task-list"></ul>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
